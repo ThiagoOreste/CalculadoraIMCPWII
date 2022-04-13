@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <div class="content">
+        <div class="calc">
+            <h1>IMC </h1>
+            <h2>Thiago Oreste dos Santos</h2>
+            <form class="form" name="formimc">
+                <label for="idade">
+                    Idade
+                    <input name="idade" id="idade" placeholder="Idade" class="idade">
+                </label>
+                <label for="altura">
+                    Altura
+                    <input name="altura" id="altura" placeholder="Altura em centímetros" >
+                </label>
+                <label for="peso">
+                    Peso
+                    <input name="peso" id="peso" placeholder="Peso em quilos">
+                </label>
+                <label for="resultado">
+                    
+                    Resultado: <textarea name="resultado" id="resultado" cols="20" rows="1"></textarea>
+                </label>
+                
+            </form>
+            <div class="botoes">
+                <button id="calcular" name="calcular" onclick="calcularIMC();">Calcular</button>
+                <button id="m" name="m">M</button>
+                <button id="f" name="f">F</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
